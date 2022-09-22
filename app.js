@@ -170,7 +170,6 @@ const logar = async () => {
 var inputsLogin = document.querySelectorAll('.emailPassLogin');
 for (let element of inputsLogin) {
     element.addEventListener("keypress", e => {
-        console.log(e.key)
         if (e.key === "Enter") {
             logar();
         }

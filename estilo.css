@@ -15,7 +15,7 @@ body {
 
 .containerCadastro, .containerLogin {
     color: white;
-    font-size: 18pt;
+    font-size: 28pt;
     font-weight: bolder;
     text-shadow: 2px 2px 4px gray;;
     display: flex;
@@ -23,7 +23,7 @@ body {
     align-items: center;
     gap: 10px 0px;
     margin-top: 30px;
-    width: 200px;
+    width: 250px;
     background-color: #232C35;
     padding: 10px;
 }
@@ -45,7 +45,8 @@ body {
     border-radius: 5px;
     outline: none;
     border-color: transparent;
-    width: 115px;
+    width: 155px;
+    font-size: 14pt;
     background-color: #181e25;
     color: white;
     transition: all 0.35s;
@@ -54,7 +55,7 @@ body {
 }
 
 .emailPassCadastro:focus, .emailPassLogin:focus {
-    width: 150px;
+    width: 190px;
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
@@ -72,6 +73,7 @@ body {
     outline: none;
     padding: 5px;
     font-weight: bold;
+    font-size: 14pt;
     background-color: #181b25;
     cursor: pointer;
     box-shadow: 2px 2px 4px #10151a;
