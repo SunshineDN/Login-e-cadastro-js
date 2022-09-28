@@ -86,7 +86,7 @@ const cadastrar = async () => {
         .then(data => {console.log(data); return data});
 
     const cadastro = {
-        "id": apiLen.length,
+        "id": apiLen.length + 1,
         "email": emailInput.value,
         "password": passInput.value
     }
@@ -137,10 +137,14 @@ const verificarLogin = async (emailL) => {
         if (emailL === email) {
             return element;
         } else {
-            alert("Email não cadastrado.");
             return;
         }
     })
+    
+    if (infoLogin[0] === undefined) {
+        alert("Email não cadastrado.");
+    }
+
     return infoLogin[0];
 }
 
@@ -154,7 +158,9 @@ const logar = async () => {
     let passowrdL = passwordLogin.value;
 
     const infoLogin = await verificarLogin(emailL);
-    if (infoLogin === undefined) return;
+    if (infoLogin === undefined) {
+        return;
+    }
 
     if (passowrdL !== infoLogin.password) {
         alert("Senha incorreta, tente novamente!");
